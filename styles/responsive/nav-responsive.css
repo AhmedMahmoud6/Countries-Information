@@ -1,0 +1,13 @@
+@media (max-width: 580px) {
+    nav {
+        padding: 0px 20px;
+    }
+
+    nav h1 {
+        font-size: 20px;
+    }
+
+    .theme {
+        gap: 10px;
+    }
+}

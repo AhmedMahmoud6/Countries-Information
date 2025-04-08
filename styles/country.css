@@ -13,6 +13,7 @@ section {
     text-decoration: none;
     color: var(--nav-text-color);
     margin-bottom: 100px;
+    background-color: var(--nav-color);
 }
 
 .country-section {
@@ -63,4 +64,5 @@ section {
     padding: 8px 20px;
     margin-left: 10px;
     color: var(--nav-text-color);
+    background-color: var(--nav-color);
 }

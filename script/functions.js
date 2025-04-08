@@ -108,7 +108,7 @@ function displayCountry(countrySect, data) {
 
 async function getCountries() {
     try {
-        let myResponse = await fetch("../data.json");
+        let myResponse = await fetch("data.json");
 
         if (!myResponse.ok) {
             throw new Error(myResponse.statusText)

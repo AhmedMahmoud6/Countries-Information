@@ -11,13 +11,13 @@ let displayed = false;
 if (localStorage.getItem("theme")) {
     if (localStorage.getItem("theme") === "light") {
         lightMode()
-        moonImg.src = "../dark_mode.svg";
-        filterArrow.src = "../arrow_down.svg";
+        moonImg.src = "dark_mode.svg";
+        filterArrow.src = "arrow_down.svg";
 
     } else {
         darkMode()
-        moonImg.src = "../light_mode.svg";
-        filterArrow.src = "../arrow_down_light.svg";
+        moonImg.src = "light_mode.svg";
+        filterArrow.src = "arrow_down_light.svg";
     }
 } else {
     localStorage.setItem("theme", "light");
@@ -57,12 +57,12 @@ theme.addEventListener("click", _ => {
 
     if (localStorage.getItem("theme") === "light") {
         darkMode()
-        moonImg.src = "../light_mode.svg";
-        filterArrow.src = "../arrow_down_light.svg";
+        moonImg.src = "light_mode.svg";
+        filterArrow.src = "arrow_down_light.svg";
     } else {
         lightMode()
-        moonImg.src = "../dark_mode.svg";
-        filterArrow.src = "../arrow_down.svg";
+        moonImg.src = "dark_mode.svg";
+        filterArrow.src = "arrow_down.svg";
     }
 })
 

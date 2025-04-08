@@ -10,12 +10,12 @@ getCountries().then(data => {
 if (localStorage.getItem("theme")) {
     if (localStorage.getItem("theme") === "light") {
         lightMode();
-        moonImg.src = "../dark_mode.svg";
-        filterArrow.src = "../arrow_left.svg"
+        moonImg.src = "dark_mode.svg";
+        filterArrow.src = "arrow_left.svg"
     } else {
         darkMode();
-        moonImg.src = "../light_mode.svg";
-        filterArrow.src = "../keyboard_light.svg"
+        moonImg.src = "light_mode.svg";
+        filterArrow.src = "keyboard_light.svg"
     }
 } else {
     localStorage.setItem("theme", "light");
@@ -26,11 +26,11 @@ theme.addEventListener("click", _ => {
 
     if (localStorage.getItem("theme") === "light") {
         darkMode()
-        moonImg.src = "../light_mode.svg";
-        filterArrow.src = "../keyboard_light.svg"
+        moonImg.src = "light_mode.svg";
+        filterArrow.src = "keyboard_light.svg"
     } else {
         lightMode()
-        moonImg.src = "../dark_mode.svg";
-        filterArrow.src = "../arrow_left.svg"
+        moonImg.src = "dark_mode.svg";
+        filterArrow.src = "arrow_left.svg"
     }
 })
